@@ -18,7 +18,7 @@ h1 {
 
 nav {
   float: right;
-  margin-top: 20px;
+  margin-top: 85px;
 }
 
 nav a {
@@ -30,7 +30,7 @@ nav a {
 
 .cajon-naranja {
   margin: 10px;
-  position: fixed;
+  position:ixed;
   right: 0;
   top: 0;
   width: 260px;
@@ -65,7 +65,6 @@ footer a {
 }
 
 
-
 @media (max-width: 480px) {
   form {
     max-width: 100%;
@@ -76,12 +75,14 @@ footer a {
   }
 
   nav {
-    float: none;
-    text-align: center;
+    float: right;
+    margin-top: 85px;
   }
-
+  
   nav a {
-    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-size:x-large;
   }
 }
 

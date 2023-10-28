@@ -17,8 +17,10 @@ h1 {
 }
 
 nav {
+  position: sticky;
+  top: 0;
   float: right;
-  margin-top: 20px;
+  margin-top: 85px;
 }
 
 nav a {
@@ -52,7 +54,7 @@ footer {
 }
 
 img {
-  width: 500px;
+  width: 260px;
 }
 
 .cajon-naranja {
@@ -100,4 +102,3 @@ footer a {
     max-width: 400px;
   }
 }
-
