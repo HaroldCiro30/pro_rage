@@ -13,7 +13,7 @@ function login() {
         // Verificar si la contraseña coincide
         if (usuario.contrasena === contrasena) {
             alert('Inicio de sesión exitoso');
-            // Puedes redirigir a otra página o realizar acciones adicionales después del inicio de sesión
+            window.location.href = '/views/pagprincipal.html';
         } else {
             // Contraseña incorrecta
             mostrarError('Contraseña incorrecta');
@@ -27,4 +27,8 @@ function login() {
 function mostrarError(mensaje) {
     const errorDiv = document.getElementById('error-message');
     errorDiv.textContent = mensaje;
+}
+
+function back() {
+    window.location.href = '../index.html';
 }

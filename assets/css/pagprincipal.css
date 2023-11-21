@@ -52,6 +52,17 @@ footer a {
   margin: 15px;
 }
 
+.btn {
+  background-color: orange;
+  margin-right: 5rem;
+  margin-top: 3.5rem;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+  border: solid;
+  width: 10rem;
+  height: 5rem;
+}
+
 
 @media (max-width: 480px) {
   form {

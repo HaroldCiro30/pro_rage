@@ -17,4 +17,5 @@ function register() {
   localStorage.setItem(correo, JSON.stringify(usuario));
 
   alert('Usuario creado correctamente. Por favor, inicie sesión.');
+  window.location.href = '/index.html';
 }
