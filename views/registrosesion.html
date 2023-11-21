@@ -4,31 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>¡PRO-RAGE! - Registro</title>
-  <link rel="stylesheet" href="registro.css">
+  <link rel="stylesheet" href="../assets/css/registro.css">
+  <script src="../assets/javascript/registro.js"></script>
 </head>
 <body>
 
-  <header>
-    <h1>¡PRO-RAGE! - Registro</h1>
-    <nav>
-      <a href="registro.php">Registrar</a>
-    </nav>
+ <header>
+    <h1 id="registro">REGISTRO</h1>
+    <img class="logoprorage" src="../assets/imagenes/PRORAGEPAGINA.png" width="100">
   </header>
 
   <main>
-    <form action="registro.php" method="post">
+    <form>
       <h2>Registro</h2>
-
-      <input type="text" name="nombres" placeholder="Nombres">
-      <input type="text" name="apellidos" placeholder="Apellidos">
-      <input type="email" name="correo" placeholder="Correo electrónico">
-      <input type="password" name="contrasena" placeholder="Contraseña">
-      <select name="genero" id="select">
+      <input type="text" name="nombres" id="nombres" placeholder="Nombres" required>
+      <input type="text" name="apellidos" id="apellidos"  placeholder="Apellidos" required>
+      <input type="email" name="correo" id="correo"  placeholder="Correo electrónico" required>
+      <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña" required>
+      <select name="genero" class="select" id="genero">
         <option value="masculino">Masculino</option>
         <option value="femenino">Femenino</option>
       </select>
-
-      <input type="submit" value="Registrar">
+      <button onclick="register()">Registrar</button>
     </form>
   </main>
 

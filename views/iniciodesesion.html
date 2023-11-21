@@ -5,36 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>¡PRO-RAGE! - Inicio de sesión</title>
   <link rel="stylesheet" href="../assets/css/iniciosesion.css">
+  <script src="/assets/javascript/login.js"></script>
 </head>
 <body>
 
   <header>
+    <h1>INICIO DE SESION</h1>
     <img class="logoprorage" src="../assets/imagenes/PRORAGEPAGINA.png" width="260">
-    <h2 id="iniciodesesión"> INICIO DE SESIÓN</h2>
   </header>
 
   <main>
-    <form action="login.php" method="post">
+    <form action="/login" method="post">
       <h2>Iniciar sesión</h2>
 
-      <input type="email" name="correo" placeholder="Correo electrónico">
-      <input type="password" name="contrasena" placeholder="Contraseña">
+      <div class="inputs">
+        <input type="email" name="correo" placeholder="Correo electrónico" required>
+        <input type="password" name="contrasena" placeholder="Contraseña" required>
+      </div>
 
-      <input type="submit" value="Iniciar sesión">
+      <button onclick="login()">INICIAR SESION</button>
 
-      <p>¿No tienes cuenta? <a href="registro.html">Registrate</a></p>
+
+      <p>¿No tienes cuenta? <a href="/views/registrosesion.html">Registrate</a></p>
     </form>
   </main>
 
   <footer>
     <p>Copyright © 2023 ¡PRO-RAGE!</p>
-  
-     <a href="https://www.facebook.com/prorage/">Facebook</a>
-     <a href="https://twitter.com/prorage/">Twitter</a>
-     <a href="https://www.instagram.com/prorage/">Instagram</a>
+    <a href="https://www.facebook.com/prorage/">Facebook</a>
+    <a href="https://twitter.com/prorage/">Twitter</a>
+    <a href="https://www.instagram.com/prorage/">Instagram</a>
   </footer>
 
 </body>
 </html>
-
 

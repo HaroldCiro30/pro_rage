@@ -1,97 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff;
-  }
-  
-  header {
-    color: white;
-    background-color: #ffaa00;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 2em;
-    color: #ffffff;
-  }
-  
-  nav {
-    float: right;
-    margin-top: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-    font-size:x-large;
-    padding: 10px;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  form {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
-  input {
-    border-radius: 10px;
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-  }
-  
-  input[type="email"] {
-    background-color: #f4f4f4;
-  }
-  
-  input[type="password"] {
-    background-color: #f4f4f4;
-    text-align: center;
-  }
-  
-  input[type="submit"] {
-    background-color: #ffaa00;
-    color: white;
-    width: 104%;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .bienvenida {
-    text-align: center;
-  }
-  
-  .boton {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .form-login {
-    margin-top: 20px;
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-
-body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #ffffff;
+  background-color: orange;
 }
 
 header {
-  color: white;
-  background-color: #ffaa00;
-  padding: 20px;
+  display: flex;
+  text-align: center;
+  background-color: orange;
+  justify-content: center;
 }
 
 h1 {
-  font-size: 2em;
-  color: #ffffff;
+  margin-top: 5rem;
+  color: black;
 }
 
 nav {
@@ -99,16 +22,59 @@ nav {
   margin-top: 20px;
 }
 
-nav a {
-  text-decoration: none;
-  color: black;
-  font-size:x-large;
+main {
+  padding: 20px;
+}
+
+form {
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(255, 230, 69);
+  margin: 0 auto;
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  border-radius: 10px;
   padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+input[type="email"] {
+  width: 40rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+input[type="password"] {
+  width: 40rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.submit {
+  text-align: center;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+  width: 15rem;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 footer {
+  margin-top: 20rem;
   color: white;
-  background-color: #ffaa00;
+  background-color: orange;
   padding: 20px;
   text-align: center;
 }
@@ -126,34 +92,71 @@ footer a {
   margin: 15px;
 }
 
-#iniciodesesión {
-  color: black;
-  font-size: 40px;
-  float: right;
-  margin-top: 80px;
-}
-
-@media (max-width: 480px) {
-  form {
-    max-width: 100%;
+@media (max-width: 576px) {
+  header {
+    margin-top: 10px;
   }
 
-  input[type="submit"] {
+  h1 {
+    margin-top: 5px;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
     width: 100%;
   }
 
-  nav {
-    float: none;
-    text-align: center;
-  }
-
-  nav a {
-    margin: 10px;
+  button {
+    width: 100%;
   }
 }
 
-@media (min-width: 1368px) {
+@media (max-width: 375px) {
+  header {
+    margin-top: 5px;
+  }
+
+  h1 {
+    margin-top: 3px;
+  }
+
   form {
-    max-width: 400px;
+    padding: 5px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    margin-top: 3px;
+  }
+
+  h1 {
+    margin-top: 2px;
+  }
+
+  form {
+    padding: 3px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
   }
 }

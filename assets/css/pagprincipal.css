@@ -2,13 +2,14 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #ffffff;
+  background-color: orange;
 }
 
-header {
-  color: white;
-  background-color: #ffaa00;
-  padding: 20px;
+header{
+  display: flex;
+  text-align: center;
+  background-color: orange;
+  justify-content: center;
 }
 
 h1 {
@@ -16,33 +17,20 @@ h1 {
   color: #ffffff;
 }
 
-nav {
-  float: right;
-  margin-top: 85px;
+#links {
+  padding: 10px;
+  margin-top: 5rem;
 }
 
-nav a {
+#links a {
+  margin-left: 3rem;
   text-decoration: none;
   color: black;
-  font-size:x-large;
-  padding: 10px;
 }
 
-.cajon-naranja {
-  margin: 10px;
-  position:ixed;
-  right: 0;
-  top: 0;
-  width: 260px;
-  margin-top: 100px;
+#links a:hover {
+  color: red;
 }
-
-
-.cajon-naranja a {
-  font-size: 25px;
-  color: black;
-}
-
 
 footer {
   color: white;
@@ -74,16 +62,7 @@ footer a {
     width: 100%;
   }
 
-  nav {
-    float: right;
-    margin-top: 85px;
-  }
   
-  nav a {
-    text-decoration: none;
-    color: black;
-    font-size:x-large;
-  }
 }
 
 @media (min-width: 1368px) {

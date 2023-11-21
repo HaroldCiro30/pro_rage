@@ -2,13 +2,14 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #ffffff;
+  background-color: orange;
 }
 
-header {
-  color: white;
-  background-color: #ffaa00;
-  padding: 20px;
+header{
+  display: flex;
+  text-align: center;
+  background-color: orange;
+  justify-content: center;
 }
 
 h1 {
@@ -18,9 +19,7 @@ h1 {
 
 nav {
   float: right;
-  margin-top: 20px;
-
-  display: none;
+  margin-top: 85px;
 }
 
 main {
@@ -28,11 +27,17 @@ main {
 }
 
 form {
+  border-radius: 10px;
+  text-align: left;
+  justify-content: center;
+  padding: 50px;
+  background-color: rgb(255, 230, 69);
   max-width: 500px;
   margin: 0 auto;
 }
 
 input {
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -40,16 +45,20 @@ input {
   border-radius: 10px;
 }
 
-input[type="submit"] {
+button {
+  font-family: 'Montserrat', sans-serif;
   background-color: #ffaa00;
   color: white;
-  padding: 10px 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px 50px;
   border: none;
   cursor: pointer;
   margin-top: 2%;
 }
 
-#select {
+.select {
+  font-family: 'Montserrat', sans-serif;
   width: 250px;
   padding: 10px 5px 10px 5px;
   border-radius: 10px;
@@ -63,7 +72,7 @@ footer {
 }
 
 img {
-  width: 500px;
+  width: 260px;
 }
 
 .cajon-naranja {
@@ -83,6 +92,24 @@ a:hover {
 
 footer a {
   margin: 15px;
+}
+
+#registro {
+  font-size: 3rem;
+  color: black;
+  float: right;
+  margin-top: 70px;
+}
+
+#regresar {
+  margin-left: 3rem;
+  background-color: #ffaa00;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 2%;
 }
 
 @media (max-width: 480px) {
