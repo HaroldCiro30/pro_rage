@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>¡PRO-RAGE! - Inicio de sesión</title>
   <link rel="stylesheet" href="../assets/css/iniciosesion.css">
-  <script src="/assets/javascript/login.js"></script>
+  <script src="../assets/javascript/login.js"></script>
 </head>
 <body>
 
@@ -15,16 +15,17 @@
   </header>
 
   <main>
-    <form action="/login" method="post">
+    <form>
       <h2>Iniciar sesión</h2>
 
       <div class="inputs">
-        <input type="email" name="correo" placeholder="Correo electrónico" required>
-        <input type="password" name="contrasena" placeholder="Contraseña" required>
+        <input type="email" name="correo" id="correo" placeholder="Correo electrónico" required>
+        <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña" required>
       </div>
 
-      <button type="button" onclick="login()">INICIAR SESION</button>
-
+      <div id="error-message" class="error-message">
+      <button type="POST" class="btn" onclick="login()">Iniciar Sesión</button>
+      </div>
 
       <p>¿No tienes cuenta? <a href="/views/registrosesion.html">Registrate</a></p>
     </form>
