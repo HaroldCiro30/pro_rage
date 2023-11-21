@@ -99,29 +99,27 @@ section img:hover {
 #tituloabajocaja {
   color: black;
 }
-
+  
 @media (max-width: 480px) {
-    form {
-      max-width: 100%;
-    }
-  
-    input[type="submit"] {
-      width: 100%;
-    }
-  
-    nav {
-      float: none;
-      text-align: center;
-    }
-  
-    nav a {
-      margin: 10px;
-    }
+  h1 {
+    font-size: 1.5rem;
   }
-  
-  @media (min-width: 1368px) {
-    form {
-      max-width: 400px;
-    }
+
+  section {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
   }
-  
+
+  section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1368px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+}

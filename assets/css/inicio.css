@@ -195,3 +195,40 @@ footer a {
 #piezas img {
   width: 40rem;
 }
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    margin-top: 5rem;
+    margin-left: 2rem;
+  }
+
+  .botones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #piezas img {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1368px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  main {
+    margin-top: 7rem;
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 1369px) {
+  #piezas {
+    margin-left: 30rem;
+  }
+}

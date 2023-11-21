@@ -60,14 +60,6 @@ img {
   width: 260px;
 }
 
-.cajon-naranja {
-  text-align: right;
-}
-
-.cajon-naranja a {
-  margin: 10px;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -81,27 +73,40 @@ footer a {
   margin: 15px;
 }
 
-@media (max-width: 480px) {
-  form {
-    max-width: 100%;
+@media only screen and (max-width: 480px) {
+
+  h1 {
+    font-size: 1.5em;
   }
 
-  input[type="submit"] {
+  #links {
+    margin-top: 3rem;
+  }
+
+  #links a {
+    margin-left: 1rem;
+  }
+
+  img {
     width: 100%;
   }
 
-  nav {
-    float: none;
-    text-align: center;
-  }
-
-  nav a {
-    margin: 10px;
+  footer {
+    margin-top: 5rem;
   }
 }
 
-@media (min-width: 1368px) {
-  form {
-    max-width: 400px;
+@media only screen and (min-width: 481px) and (max-width: 1368px) {
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  #links {
+    margin-top: 4rem;
+  }
+
+  #links a {
+    margin-left: 2rem;
   }
 }

@@ -19,3 +19,7 @@ function register() {
   alert('Usuario creado correctamente. Por favor, inicie sesión.');
   window.location.href = '/index.html';
 }
+
+function back() {
+  window.location.href = '../index.html';
+}
