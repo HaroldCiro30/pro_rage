@@ -23,3 +23,7 @@ function login() {
     }
 }
 
+function mostrarError(mensaje) {
+    const errorDiv = document.getElementById('error-message');
+    errorDiv.textContent = mensaje;
+}
